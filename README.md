@@ -2,6 +2,9 @@
 Scripts for running CHiCAGO for Capture HiC data analysis
 
 
+## Progress notes 
+
+
 ## Internal documents 
 
 ## Resources
