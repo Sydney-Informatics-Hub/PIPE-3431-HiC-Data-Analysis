@@ -8,18 +8,6 @@ Scripts for running CHiCAGO for promoter capture Hi-C data analysis.
 * Support: consult
 * [JIRA ticket](https://ctdshub.atlassian.net/browse/PIPE-3431?atlOrigin=eyJpIjoiNjQ3NjI4MDFiMmNkNDRkZWI3MDYyZDkyYTc2NTAyYjIiLCJwIjoiaiJ9)
 
-## Progress notes 
-
-### Meeting 14/10/22
-
-* Code management with GitHub
-* Workflow overview considerations
-  * Run the HiCUP container at Artemis (QC & alignment)  
-  * v0.8.2 installed on Artemis 
-  * Try with test dataset from 
-* Tool installation 
-* Trial run with [test data]() 
-
 ## Resources
 
 * [HiCUP github](https://github.com/StevenWingett/HiCUP)
