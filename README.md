@@ -18,3 +18,4 @@ Scripts for running CHiCAGO for promoter capture Hi-C data analysis.
 * [CHiCAGO bitbucket](https://bitbucket.org/chicagoTeam/chicago/src/master/)
 * [chicdiff guide](https://dovetail-capture.readthedocs.io/en/latest/Interaction_analysis.html#diff)
 * [chicdiff github](https://github.com/RegulatoryGenomicsGroup/chicdiff/)
+* [SIH intro to git workshop](https://sydney-informatics-hub.github.io/intro-git/) 
