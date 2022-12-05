@@ -2,6 +2,12 @@
 
 Scripts for running CHiCAGO for promoter capture Hi-C data analysis. 
 
+## Data processing 
+
+**Create modified reference sequence and annotation files for insertion**
+
+See `reform/` directory for method summary and scripts. 
+
 ## Internal SIH
 
 * Client: Marina Kennerson, Ally Boyling (PhD student)
