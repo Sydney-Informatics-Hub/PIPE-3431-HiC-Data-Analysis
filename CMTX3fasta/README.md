@@ -15,7 +15,26 @@ Second level of choice for whole assembly:
 * **toplevel:** includes haplotype information.
 * **alt:** contains alternate contigs which have implications for variant calling in variable regions of the genome like the HLA locus.
 
-## Making custom fasta 
+## Making the CMTX3 fasta 
+
+Extract the chr8 sequence from the downloaded and gunzipped [chr8 fasta file](https://ftp.ensembl.org/pub/release-108/fasta/homo_sapiens/dna/) with the following code. You will need to run this as an interactive session if you are working on Artemis as it'll consume more memory than is available on the login nodes. To run an interactive session: 
+
+```bash
+# start interactive session 
+qsub -P <DashR project name> -I 
+
+# it'll automatically place you in $HOME so you will need to move back to where you were working
+cd /path/to/workingDirectory 
+```
+
+Then print a substring of the whole file by first concatenating the lines using `tr` which removes newlines. Then run your `awk` command on the whole file: 
+
+```bash
+cat Homo_sapiens.GRCh38.dna.chromosome.8.fa | tr -d '\n' | awk '{print substr($0,start_pos,length)}'
+```
+
+
+## Making custom assembly fasta 
 
 To make a custom reference fasta with autosomes from the hg38 assembly, you can run the following script to download all autosome fasta files (just check all the file names are correct):
 
