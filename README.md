@@ -1,12 +1,13 @@
 # PIPE-3431-HiC-Data-Analysis
 
-Scripts for running CHiCAGO for promoter capture Hi-C data analysis. 
+Scripts and notes for data preparation and commands for running CHiCAGO for promoter capture Hi-C data analysis. 
 
 ## Data processing 
 
-**Create modified reference sequence and annotation files for insertion**
-
-See `reform/` directory for method summary and scripts. 
+* [Reform](https://github.com/Sydney-Informatics-Hub/PIPE-3431-HiC-Data-Analysis/tree/main/reform) 
+* [CMTX3 fasta](https://github.com/Sydney-Informatics-Hub/PIPE-3431-HiC-Data-Analysis/tree/main/CMTX3fasta) 
+* [Tool installations](https://github.com/Sydney-Informatics-Hub/PIPE-3431-HiC-Data-Analysis/tree/main/Installation) 
+* [Data transfer to Nimbus](https://github.com/Sydney-Informatics-Hub/PIPE-3431-HiC-Data-Analysis/tree/main/DataTransfer)  
 
 ## Internal SIH
 
