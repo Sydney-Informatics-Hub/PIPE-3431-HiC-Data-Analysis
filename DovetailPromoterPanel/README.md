@@ -13,7 +13,7 @@ Following documentaion [here](https://dovetail-capture.readthedocs.io/en/latest/
 
 ### Customising your environment before you begin  
   
-By default, Singularity will set up a directory called `.singularity` in your $HOME directory. This contains a cache directory to make downloading and building images faster, a temporary directory which needs to be large enough to hold a whole singularity image file (SIF). These locations can be configured by setting SINGULARITY_TMPDIR and SINGULARITY_CACHEDIR to desired paths on /scratch or /g/data. Set the following environmental variables within the script before running:   
+By default, Singularity will set up a directory called `.singularity` in your $HOME directory. This contains a cache directory to make downloading and building images faster, a temporary directory which needs to be large enough to hold a whole singularity image file (SIF). These locations can be configured by setting SINGULARITY_TMPDIR and SINGULARITY_CACHEDIR to desired paths. Set the following environmental variables within the script before running:   
 
 ```
 mkdir -p /scratch/er01/gs5517/singularity/{cache,tmp}
