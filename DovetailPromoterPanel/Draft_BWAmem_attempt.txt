@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# script for running the BWA mem step of Dovetail's Promoter Panel Capture Analysis Pipeline 
+
+# pull the appropriate container image 
+
+singularity pull <bwa mem container info>
+
+
+# set variables to define location of the directories that need to be bound to container 
+
+genome_folder=/path/to/ref/genome/directory (e.g. /data/RefGenomes/Control_hg38)
+raw_fastq_folder=/path/to/reads/directory (e.g. /data/RawFASTQ)
+output_folder=/path/to/output/directory (e.g. /data/outputs)
+
+# bind the above directories
+
+singularity exec --bind ${genome_folder},${raw_fastq_folder},${output_folder} <bwa mem container name>
+
+
+# set the variables to define files (the example given is for the control sample run against the control genome)
+
+ref_fasta=/path/to/ref/fasta (e.g. /data/RefGenomes/Control_hg38/hg38.fa)
+read1=/path/to/read1 (e.g. /data/RawFASTQ/DTG-PPC-006a_1.fastq.gz)
+read2=/path/to/read2 (e.g. /data/RawFASTQ/DTG-PPC-006a_2.fastq.gz)
+sample=<sample info> (e.g. BB1) # for CMTX3 sample, remember to include info on which variation of the 3 ref genomes you are using
+
+
+# run the bwa mem command within the container  
+
+singularity exec <bwa mem container name> \
+    bwa mem -5SP -T0 -t16 ${ref_fasta} ${read1} ${read2} -o  ${output_folder}/${sample}_aligned.sam
